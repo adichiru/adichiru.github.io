@@ -4,10 +4,10 @@ date: 2016-10-17 17:06:00 -07:00
 published: false
 categories:
 - linux
-- security
+- cloud
 tags:
 - linux
-- security
+- google drive
 image: 
 description: How to have access to Google Drive from linux CLI
 serie: Basics
