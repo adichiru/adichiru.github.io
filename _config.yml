@@ -1,6 +1,6 @@
 ---
 title: Adi's Blog
-timezone: UTC
+timezone: America/Los_Angeles
 collections:
   posts:
     title: Posts
@@ -9,8 +9,9 @@ collections:
     title: Uploads
     output: true
 email: adichiru@gmail.com
-description: Adi's views and thoughts on Cloud Computing, DevOps and other cool stuff
-baseurl: ''
+description: Adi's views and thoughts on Cloud Computing, DevOps, Linux and other
+  cool stuff
+baseurl: 
 url: http://example.com
 github_username: adichiru
 permalink: "/:year/:month/:day/:title/"
