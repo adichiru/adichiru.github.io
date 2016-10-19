@@ -1,27 +1,28 @@
 ---
 title: Google Drive from command line
-date: 2016-10-18 00:06:31 Z
+date: 2016-10-17 17:06:00 -07:00
+published: false
 categories:
 - linux
 - security
 tags:
 - linux
 - security
-layout: post
-image: ''
+image: 
 description: How to have access to Google Drive from linux CLI
 serie: Basics
+layout: post
 ---
 
-[//]: # (<p class="music-read"><a href="spotify:track:4DAZ8UYNpWVIV46aLkN2Qp">Music for reading(spotify)</a></p>)
-[//]: # (<img src="http://cdn1.tnwcdn.com/wp-content/blogs.dir/1/files/2016/02/raw.gif">)
-
-
 If you are decent user of Google Drive and also find yourself frequently in a linux terminal, you'd probably like to be able to interact with your content on Google Drive from CLI.
-It would be easy to imagine how usefull would be to be able to list and upload files to your Google Drive at the very least.
-Looking into how to send some archive to Google Drive from linux CLI I found gdrive.
-This is not Google's implementation for linux but a tool written in Go by Peter Rasmussen. Gdrive 2 uses version 3 of the Google drive api and it compatible with gdrive 1 according to the information on the github project.
-Also, it has no dependencies and is available for Windows and Mac as well.
+
+It's easy to imagine how useful it would be to list and upload files to your Google Drive directly from your shell.
+
+Looking into how to send some archives to Google Drive from linux CLI, I found **gdrive**.
+
+This is not Google's implementation for linux but a tool written in Go by [Peter Rasmussen](https://github.com/prasmussen). Gdrive 2 uses version 3 of the Google drive api and it's compatible with gdrive 1, according to the information on the github project.
+
+Also, it has no dependencies and it is available for Windows and Mac as well!
 For more info definitely check: https://github.com/prasmussen/gdrive
 
 In this post I will only show how easy it is to install and use it on linux.
