@@ -1,6 +1,7 @@
 ---
 title: Enabling SSH on Ubuntu 16.04
-date: 2016-09-12 00:06:31 Z
+date: 2016-09-11 17:06:00 -07:00
+published: false
 categories:
 - linux
 - security
@@ -8,11 +9,11 @@ tags:
 - ssh
 - security
 - ubuntu
-layout: post
-image: ''
+image: 
 description: Ubuntu LTS 16.04 does not come by default with SSH server installed or
   running.
 serie: Basics
+layout: post
 ---
 
 [//]: # (<p class="music-read"><a href="spotify:track:4DAZ8UYNpWVIV46aLkN2Qp">Music for reading(spotify)</a></p>)
