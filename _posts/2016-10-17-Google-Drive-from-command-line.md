@@ -13,7 +13,7 @@ serie: Basics
 layout: post
 ---
 
-![Google_Drive_Logo_lrg-580x461.jpg](/uploads/Google_Drive_Logo_lrg-580x461.jpg)
+![Google_Drive_Logo_lrg-580x461.jpg](/uploads/Google_Drive_Logo_lrg-580x461.jpg){: .center-image }
 
 If you are decent user of Google Drive and also find yourself frequently in a linux terminal, you'd probably like to be able to interact with your content on Google Drive from CLI.
 
