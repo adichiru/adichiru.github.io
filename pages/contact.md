@@ -1,8 +1,8 @@
 ---
-layout: page
 title: Contact
+permalink: "/contact/"
+layout: page
 comments: false
-permalink: /contact/
 ---
 
 ## Contact details

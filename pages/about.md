@@ -1,8 +1,8 @@
 ---
-layout: page
 title: About
+permalink: "/about/"
+layout: page
 comments: false
-permalink: /about/
 ---
 
 ## About me

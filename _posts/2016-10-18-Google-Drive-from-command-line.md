@@ -1,15 +1,15 @@
 ---
-layout: post
-title: "Google Drive from command line"
-image: ''
-date:   2016-10-18 00:06:31
-tags:
-- linux
-- security
-description: 'How to have access to Google Drive from linux CLI'
+title: Google Drive from command line
+date: 2016-10-18 00:06:31 Z
 categories:
 - linux
 - security
+tags:
+- linux
+- security
+layout: post
+image: ''
+description: How to have access to Google Drive from linux CLI
 serie: Basics
 ---
 
