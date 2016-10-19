@@ -14,6 +14,7 @@ layout: post
 ---
 
 ![Google_Drive_Logo_lrg-580x461.jpg](/uploads/Google_Drive_Logo_lrg-580x461.jpg)
+
 If you are decent user of Google Drive and also find yourself frequently in a linux terminal, you'd probably like to be able to interact with your content on Google Drive from CLI.
 
 It's easy to imagine how useful it would be to list and upload files to your Google Drive directly from your shell.
