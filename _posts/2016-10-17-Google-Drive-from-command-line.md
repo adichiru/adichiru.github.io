@@ -1,7 +1,6 @@
 ---
 title: Google Drive from command line
 date: 2016-10-17 17:06:00 -07:00
-published: false
 categories:
 - linux
 - cloud
