@@ -44,15 +44,64 @@ So let's check if you have a firewall working and denying access to SSH server.
 
 {% highlight bash %}
 
-iptables -nvL
-iptables -t nat -nvL
+sudo iptables -nvL
 
 {% endhighlight %}
+which should give you and output similar to:
 
+{% highlight bash %}
+Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination
+
+Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination
+{% endhighlight %}
+
+From that output you only care about the first two line showing you that the policy for INPUT is ACCEPT and there are no specific rules to deny tcp port 22
+
+At this moment, the SSH server is up and running and accepting connections but it runs with a default configuration.
+The default config is not very secure and restrictive and brute force attacks on tcp/22 are constant, especially if you have this system directly exposed to the Internet.
+
+To configure SSH server you need to modify different settings in this file:
 
 {% highlight bash %}
 vi /etc/ssh/sshd_config
 sudo service ssh restart
 {% endhighlight %}
+
+I will re-vive and update and publish here soon an old post I wrote several years ago about configuring SSH server. 
+
+In the mean time I'd like to point out a few other basic things:
+1. After modification you need to restart the SSH server to load the new config. But to be safe it is always a good idea to make sure that your changes are not preventing the SSH server to start - if that will happen you'll lose SSH access to the system, which could be very unfortunate.
+To have a safe-guard against this problem you can use a simple script in cron that will replace your faulty configuration in x minutes unless you stop it.
+2. Another nice way to deak with this is to validate you configu file before restarting ssh server. This can be done with this command:
+
+find the binary of the sshd server:
+which sshd
+
+run the sshd server with the -t parameter to validate the config file
+
+the expected out put is nothing (except for a success exit code) if everything is fine; To see the exit code run this imediately after the previous command:
+echo $?
+
+In case of errors, you find messages showing the line of the offending syntax.
+
+
+To try to connect to this SSH server might also prove problematic on the client side; it is possbile that you'll get an error like this:
+"Disconnected: Server protocol violation: unexpected SSH2_MSG_UNIMPLEMENTED packet"
+
+This is the error Putty (Development snapshot 2014-09-02:r10214) will give you. (That's old.... I need to update it!)
+
+To fix this, you need to make sure that Key exchange algorithm does include "Diffie-Hellman group echange". In putty, load the session you need to fix and go to Connection > SSH > Kex and make sure the you put the mentioned algorithm at the very end.
+
+
+
+
+
+
+
 
 
