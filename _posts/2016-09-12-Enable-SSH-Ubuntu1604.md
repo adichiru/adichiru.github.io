@@ -60,12 +60,12 @@ Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
  pkts bytes target     prot opt in     out     source               destination
 {% endhighlight %}
 
-From that output you only care about the first two line showing you that the policy for INPUT is ACCEPT and there are no specific rules to deny tcp port 22
+From that output you only care about the first two lines showing that the policy for INPUT is ACCEPT and there are no specific rules to deny tcp port 22.
 
 At this moment, the SSH server is up and running and accepting connections but it runs with a default configuration.
 The default config is not very secure and restrictive and brute force attacks on tcp/22 are constant, especially if you have this system directly exposed to the Internet.
 
-To configure SSH server you need to modify different settings in this file:
+To configure SSH server you need to modify this file:
 
 {% highlight bash %}
 vi /etc/ssh/sshd_config
@@ -74,30 +74,36 @@ sudo service ssh restart
 
 I will re-vive and update and publish here soon an old post I wrote several years ago about configuring SSH server. 
 
-In the mean time I'd like to point out a few other basic things:
+In the mean time, I'd like to point out a few other basic things:
+
 1. After modification you need to restart the SSH server to load the new config. But to be safe it is always a good idea to make sure that your changes are not preventing the SSH server to start - if that will happen you'll lose SSH access to the system, which could be very unfortunate.
-To have a safe-guard against this problem you can use a simple script in cron that will replace your faulty configuration in x minutes unless you stop it.
-2. Another nice way to deak with this is to validate you configu file before restarting ssh server. This can be done with this command:
+  To have a safe-guard against this problem, there are at least 2 methods:
+    1. Make a simple bash script that will replace your faulty configuration in x minutes, unless you stop it, with the default one; run this script in cron.
+    2. Validate you configuration file before restarting ssh server. This can be done as follows:
+      - find the binary of the sshd server
+      - execute the binary with the -t parameter to validate the config file
+      - verify the exit code
 
-find the binary of the sshd server:
-which sshd
+      {% highlight bash %}
+      which sshd
+      ./$(which sshd) -t
+      echo $?
+      {% endhighlight %}
+      
+      In case of errors, you find messages showing the line of the offending syntax.
 
-run the sshd server with the -t parameter to validate the config file
+2. For troubleshooting, the fact that the config file shows some parameteres/values does not mean that the process is configured in that way. Simply because the changes in the config file could have occured after the process was started. This is an issue that even pretty serious security tools used for validation, auditing or conformity are not smart enough to deal with. 
 
-the expected out put is nothing (except for a success exit code) if everything is fine; To see the exit code run this imediately after the previous command:
-echo $?
-
-In case of errors, you find messages showing the line of the offending syntax.
 
 
 To try to connect to this SSH server might also prove problematic on the client side; it is possbile that you'll get an error like this:
-"Disconnected: Server protocol violation: unexpected SSH2_MSG_UNIMPLEMENTED packet"
+**"Disconnected: Server protocol violation: unexpected SSH2_MSG_UNIMPLEMENTED packet"**
 
-This is the error Putty (Development snapshot 2014-09-02:r10214) will give you. (That's old.... I need to update it!)
+That's the error Putty (Development snapshot 2014-09-02:r10214) will give you. (That's old.... I need to update it!)
 
 To fix this, you need to make sure that Key exchange algorithm does include "Diffie-Hellman group echange". In putty, load the session you need to fix and go to Connection > SSH > Kex and make sure the you put the mentioned algorithm at the very end.
 
-
+For linux, ???
 
 
 
