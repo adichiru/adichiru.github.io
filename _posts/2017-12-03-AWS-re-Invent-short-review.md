@@ -19,7 +19,7 @@ layout: post
 
 My first participation (just few days ago) to the well known AWS re:Invent exposed me to a mix of feelings, memories, disappointments, ideas and hope. I used to work for AWS as TAM in Netherlands. For a brief period of time, unfortunately...
 
-During the event in Las Vegas I got first a little sad that I am not part of this impressive and game-changing company anymore but no later than my first day in the conference I was reminded, accidentally, how much better it is to work *with* AWS cloud technologies rather than to work *in* AWS: I was at a table having lunch and, next to me, 2 AWS employees sat down with their lunch and discussed how nothing is clear, how it is frustrating to never know what you are actually expected to do, how the company pushes a lot on the individual and not giving too much support to deal with various things. These were people that were partially in charge of this event.
+During the event in Las Vegas I got first a little sad that I am not part of this impressive and game-changing company anymore but no later than my first day in the conference I was reminded, accidentally, how much better it is to **work with AWS cloud technologies** rather than to **work in AWS**: I was at a table having lunch and, next to me, 2 AWS employees sat down with their lunch and discussed how nothing is clear, how it is frustrating to never know what you are actually expected to do, how the company pushes a lot on the individual and not giving too much support to deal with various things - nothing new to me. These were people that were partially in charge of this event.
 
 Moving on, being an attendee only, I was trying to get to the most interesting sessions for me: Security related, DevOps and Infrastructure.
 
@@ -38,20 +38,20 @@ Make the "paths" (DevOps, Infrastructure, ML, etc.) easy to follow - no overlapp
 
 ##### Now on the good stuff:
 
-* The event, in general, was impressive, huge, massive, unnecessarily imposing... no sign of the frugality LP you are many times hit with as an employee.
+  * The event, in general, was impressive, huge, massive, unnecessarily imposing... no sign of the frugality LP you are many times hit with as an employee.
 
-* All of the sessions that I went to because I could not get into those that I wanted (more than half actually) were actually better than those of high demand. The How I Made My Motorbike Talk for example, was one a lot more inspiring and interesting talks than the ones of much higher demand from AWS representatives.
+  * All of the sessions that I went to because I could not get into those that I wanted (more than half actually) were actually better than those of high demand. The How I Made My Motorbike Talk for example, was one a lot more inspiring and interesting talks than the ones of much higher demand from AWS representatives.
 
-* It was definitely nice and reassuring to see that "Advanced DevOps" is very much in line with what I was doing and pushing for in several companies, most recently in Origin Group within Electronic Arts. I really wish some of my former colleagues in EA would watch these and understand that this is the way to go.
+  * It was definitely nice and reassuring to see that "Advanced DevOps" is very much in line with what I was doing and pushing for in several companies, most recently in Origin Group within Electronic Arts. I really wish some of my former colleagues in EA would watch these and understand that this is the way to go.
 
-* The Expo with all the vendors and partners in both Aria and Venetian was really good. Lots of good information, features, specific approaches to the same problems. Sometimes I got more valuable information from Expo than from some sessions.
+  * The Expo with all the vendors and partners in both Aria and Venetian was really good. Lots of good information, features, specific approaches to the same problems. Sometimes I got more valuable information from Expo than from some sessions.
 
 ##### Some generic thoughts:
 
-* serverless is (although was for quite some time now) the new thing - lots of interest in this concept and technology
-* DevOps is still needed, appreciated and slowly re-designed, re-invented, fine-tuned for various industries, including the slower ones (e.g. financial, government etc.)
-* Security is omnipresent - I guess the old phrase "there is no cloud without security" still applies even more today.
-* For some reason, many companies are betting their business model on exposing data from AWS accounts to the customer in a "better way", or "easier", or "more centralized". I was never really annoyed that AWS cloud tech is not giving me access to this data (logs, events etc.) in an easy to process way. Most of this is really processing CloudTrail and Billing data (a csv file that can be HUGE, in many cases).
+  * Serverless is (although was for quite some time now) the new thing - lots of interest in this concept and technology.
+  * DevOps is still needed, appreciated and slowly re-designed, re-invented, fine-tuned for various industries, including the slower ones (e.g. financial, government etc.).
+  * Security is omnipresent - I guess the old phrase "there is no cloud without security" still applies, even more today.
+  * For some reason, many companies are betting their business model on exposing data from AWS accounts to the customer in a "better way", or "easier", or "more centralized". I was never really in a potision to need better or easier access to the data (logs, events etc.) I needed in the AWS accounts I was working with. Most of this is really processing CloudTrail and Billing data (a csv file that can be HUGE, in many cases).
 
 Overall it was a very interesting week, with ups and downs, quite demanding but also rewarding!
 
