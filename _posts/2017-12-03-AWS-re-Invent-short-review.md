@@ -15,7 +15,8 @@ serie: Basics
 layout: post
 ---
 
-![reinvent_2017_banner_1.png](/uploads/reinvent_2017_banner_1.png){: .center-image }
+![reinvent_2017_banner_1.png](/uploads/reinvent_2017_banner_1.png)
+
 
 My first participation (just few days ago) to the well known AWS re:Invent exposed me to a mix of feelings, memories, disappointments, ideas and hope. I used to work for AWS as TAM in Netherlands. For a brief period of time, unfortunately...
 
@@ -29,14 +30,34 @@ The shuttle service they had included was really slow: the first day took me 35 
 
 The only time I got through the above route in 14 + 12 minutes, respectively, was during Andy Jassy's keynote - so **this was not a Las Vegas traffic problem, was an AWS re:Invent induced problem**. It also never got solved during the entire week!
 
-Also, a few other things to improve upon:
+I estimante that, due to:
+  * inefficient transportation
+  * overlaping sessions
+  * distributing sessions of the same Path to different venues
+  * not being able to reserve seats
+  * wasting time (hours) in line for walk-ups because we were told there are good chances to get in
+**I probably missed at least 30% of the event**.
 
-  * Too much "this is amazing" fluff from AWS representatives during Introductory (200) and even Advanced (300) sessions. Let the facts and use cases presented by others (Expedia, Netflix etc.) speak for themselves - much more powerful!
-Everybody should have the same chance of booking the sessions they want. After only minutes from online access, some of the sessions were already full...
-  * Waiting in line for walk-up sessions is complete chaos - AWS needs desperately to find a solution for this.
-Make the "paths" (DevOps, Infrastructure, ML, etc.) easy to follow - no overlapping sessions that are not on the same topic, and definitely not in different venues!
+### So, a few other things to improve upon:
 
-##### Now on the good stuff:
+  * Dial down the "this is amazing" fluff from AWS representatives during Introductory (200) and even Advanced (300) sessions. Let the facts and use cases presented by others (Expedia, Netflix etc.) speak for themselves - much more powerful!
+  
+  * Make sure that everybody has the same chance of booking the sessions they want. After only minutes from online access, some of the sessions were already full... I think I know how :)
+
+  * Waiting in line for walk-up sessions is complete chaos - **please** find a solution for this.
+  
+  * Make the "paths" (DevOps, Infrastructure, ML, etc.) easy to follow - no overlapping sessions that are not on the same topic, and definitely not in different venues!
+
+  * The mobile app:
+    * doesn't show  your schedule if you are offline
+    * cannot find the connection if you oscilate from online to offlin,e unless you restart it (at least on Android)
+    * doesn't have a featuire to share your schedule with somebody else
+    * doesn't filter on time (for afternoon sessions I had to scroll a lot through the morning ones)
+    * doesn't give you the "what session is starting in the next [minutes] in [venue] - **this would have saved me lots of time and for sure would have helped to get more from this event**. 
+
+
+
+### Now on the good stuff:
 
   * The event, in general, was impressive, huge, massive, unnecessarily imposing... no sign of the frugality LP you are many times hit with as an employee.
 
@@ -46,12 +67,14 @@ Make the "paths" (DevOps, Infrastructure, ML, etc.) easy to follow - no overlapp
 
   * The Expo with all the vendors and partners in both Aria and Venetian was really good. Lots of good information, features, specific approaches to the same problems. Sometimes I got more valuable information from Expo than from some sessions.
 
-##### Some generic thoughts:
+
+
+### Some generic thoughts:
 
   * Serverless is (although was for quite some time now) the new thing - lots of interest in this concept and technology.
   * DevOps is still needed, appreciated and slowly re-designed, re-invented, fine-tuned for various industries, including the slower ones (e.g. financial, government etc.).
   * Security is omnipresent - I guess the old phrase "there is no cloud without security" still applies, even more today.
   * For some reason, many companies are betting their business model on exposing data from AWS accounts to the customer in a "better way", or "easier", or "more centralized". I was never really in a potision to need better or easier access to the data (logs, events etc.) I needed in the AWS accounts I was working with. Most of this is really processing CloudTrail and Billing data (a csv file that can be HUGE, in many cases).
 
-Overall it was a very interesting week, with ups and downs, quite demanding but also rewarding!
+**Overall it was a very interesting week, with ups and downs, quite demanding but also rewarding!**
 
