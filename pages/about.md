@@ -9,7 +9,7 @@ comments: false
 
 I am a Cloud Solutions Architect!
 I am a DevOps Engineer!
-I am an advocate for change!
+I am an advocate for change to promote evolution!
 
 I was a Security Architect, a Technical Account Manager, a Systems Engineer, a SysAdmin, a Network Engineer.
 I've assumed roles like Project Manager, Release Manager, Release Engineer, SRE etc. because I had to and because I like change.
@@ -30,10 +30,10 @@ For more details on me, my LinkedIn profile is the best public source: [Adi Chir
 
 ## About my company
 
-In 2014 I started this company to provide my computer skills in general and DevOps services in particular to various clients.
-Since then my company grew, slowly but very stable and very reliable.
+In 2014 I started a new company based in Vancouver, Canada to provide specialised DevOps services to various clients rather than workign for one client (employer).
+Slowly but surely, as any one man company, we grew more and more into a dense core of experts capable to deliver some really nice results!
 
-Some of the clients:
+Some of our clients:
 * [Electronic Arts - Global Web Publishing Group](https://www.ea.com/en-ca)
 * [Electronic Arts - Origin Group](https://www.origin.com/)
 * [Electronic Arts - EAX Group](https://www.ea.com)
