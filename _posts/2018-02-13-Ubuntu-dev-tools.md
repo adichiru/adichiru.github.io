@@ -30,7 +30,7 @@ sudo apt upgrade
 sudo apt dist-upgrade
 sudo apt install vim
 sudo apt install build-essential curl
-sudo apt install git git-core`
+sudo apt install git git-core
 ~~~~
 
 ##### Notes: 
