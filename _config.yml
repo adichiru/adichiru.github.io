@@ -18,6 +18,6 @@ permalink: "/:year/:month/:day/:title/"
 disqus_shortname: adichiru
 disqus_url: http://adichiru.github.io
 markdown: kramdown
-theme: minima
+remote_theme: sleek_blog
 host: 0.0.0.0
 port: 4000
